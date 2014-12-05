@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trello Card Numbers",
+  "description": "Shows Trello card numbers to make referencing easier for humans.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://trello.com/*"],
+      "js": ["jquery.js", "trello-card-numbers.js"]
+    }
+  ],
+
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
